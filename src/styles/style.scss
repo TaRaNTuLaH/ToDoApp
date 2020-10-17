@@ -1,0 +1,137 @@
+
+.container {
+  border-radius: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  background-color: white;
+  font-family: monospace;
+  width: 40vw;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+input {
+  background-color: transparent;
+  border: none;
+  outline-width: 0;
+  text-align: center;
+  display: inline-block;
+  border-bottom: 1px solid #CCC;
+  float: left;
+  font-family: monospace;
+  width: 88%;
+  height: 35px;
+  line-height: 35px;
+  font-size: 30px;
+  color: rgb(95, 94, 97);
+  padding: 0 0 0 0;
+  &::placeholder {
+    color: lightgrey;
+  }
+}
+.userinput{
+  width: 100%;
+}
+span {
+  color:green
+}
+.addbutton{
+  display: inline-block;
+  outline-width: 0;
+  float: left;
+  display: inline-block;
+  height: 39px;
+  width: 11%;
+  color: black;
+  font-family: monospace;
+  font-size: 20px;
+  text-align: center;
+  line-height: 39px;
+  background-position: black;
+  cursor: pointer;
+}
+h1 {
+  text-align: center;
+}
+.todo {
+  color: green;
+
+}
+.done {
+  color: green;
+}
+
+deletedone{
+}
+ul {
+
+  padding: 0 0 0 0;
+  width: 100%;
+}
+button {
+  cursor: pointer;
+}
+.left{
+  position: absolute;
+  right: 0;
+  top: 20px;
+  background-color: white;
+  color: green;
+}
+@keyframes slidein {
+  0%{
+    width: 0%;
+    opacity: 0;
+  }
+  100%{
+    width: 100%;
+    opacity: 1;
+  }
+}
+@keyframes opacity {
+  0%{
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  100%{
+     opacity: 1;
+  }
+}
+li {
+  overflow: auto;
+  animation: slidein 0.2s;
+  animation-fill-mode: forwards;
+  position: relative;
+  line-height: 50px;
+  font-size: 25px;
+  width: 100%;
+  height: 50px;
+  margin-top: 3px;
+  text-align: center;
+  color: grey;
+  border-color: grey;
+  list-style-type: none;
+  border-bottom: 1px solid;
+  &:hover {
+    color: tomato;
+    border-color: tomato;
+    cursor:  pointer;
+  }
+  span, button {
+    animation: opacity 0.5s;
+    animation-fill-mode: forwards;
+     &:hover {
+       font-weight: bold;
+     }
+  }
+  button {
+    background-color: transparent;
+    border: none;
+    outline-width: 0;
+  }
+
+}
